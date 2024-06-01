@@ -1,4 +1,4 @@
-# 1-pager: DVL_beam_splitter 
+# DVL_beam_splitter 
 
 ## Background
 To capture video of a transect, the pilot tries to fly the ROV at a constant speed in a straight line 1m above the seafloor. 
