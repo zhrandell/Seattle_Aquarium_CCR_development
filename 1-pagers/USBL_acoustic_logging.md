@@ -1,8 +1,8 @@
 # USBL_acoustic_logging
 
 ## Background
-Acoustic GPS systems rely upon (*1*) acoustic transmissions underwater and (*2*) a topside component on the vessel that obtains a GPS and compass heading. 
-The integration of (*1*) & (*2*) generates GPS estimates of the ROV position underwater.
+Acoustic GPS systems rely upon (**1**) acoustic transmissions underwater and (**2**) a topside component on the vessel that obtains a GPS and compass heading. 
+The integration of (**1**) & (**2**) generates GPS estimates of the ROV position underwater.
 
 Unfortunately, [we found](https://discuss.bluerobotics.com/t/positioning-error-present-with-waterlinked-ugps-system/14317) WaterLinked’s Underwater GPS ([UGPS](https://waterlinked.github.io/underwater-gps/introduction/)) topside GPS and compass exhibited substantial error which propagated to our ROV positioning estimates. 
 Clyde tapped into the Seattle Aquarium’s vessel to feed the Lowrance GPS and compass information to the UGPS, though [it was determined](https://www.dropbox.com/scl/fi/f9l4wlr08syb6tb8rv125/Test-results_YDEN-and-UGPS.pdf?rlkey=5kpjsey9cp8r2nfyzou0sjq8m&dl=0) the vessel’s GPS also exhibited error which was likely smoothed within a proprietary, closed off system. 
@@ -11,7 +11,7 @@ We therefore obtained Advanced Navigation’s [GNSS Compass](https://www.advance
 ## The Problem
 While the topside instability with the UGPS has been resolved, there are still instances where we want to scrutinize the underwater acoustics in more detail. 
 The UGPS relies upon [x4 acoustic receivers](https://waterlinked.github.io/underwater-gps/locators/locator-d1/), though those x4 individual signals are not logged; 
-only the final integrated output from (*1*) & (*2*) above are logged. 
+only the final integrated output from (**1**) & (**2**) above are logged. 
 Having the raw acoustic information would enable a better understanding of how our ROV survey parameters such as altitude above seafloor, distance from vessel, seafloor composition, etc., all affect the efficacy (and noise) of the acoustic system. 
 We know there are limitations to acoustic systems (e.g., acoustic shadows), and having the raw acoustics would enable us to better understand these limitations in relation to our modes of ROV operation. 
 
