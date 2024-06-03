@@ -19,7 +19,8 @@ Build a BlueOS Extension that connects to the DVL, obtains the distances for eac
 Show all 5 distances in a simple extension UI so that the pilot can use the information to navigate.
 
 ## Next Steps
-The WaterLinked BlueOS [DVL extension](https://github.com/bluerobotics/BlueOS-Water-Linked-DVL) provides an example of connecting to the DVL and sending MAVLink messages. Start by cloning this extension.
+The WaterLinked BlueOS [DVL extension](https://github.com/bluerobotics/BlueOS-Water-Linked-DVL) provides an example of connecting to the DVL and sending MAVLink messages. 
+Start by cloning this extension.
 
 ## Caveats
 ArduSub only supports 1 rangefinder for each orientation, so the 4 additional messages should report different orientations.
