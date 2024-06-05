@@ -14,7 +14,7 @@ In the process of generating the manually annotated transect linked above, multi
 Specifically, we are uncertain if VIAME is the best open-source program, or if some other platform is more suited.
 A step further, given the challenges listed below in **The Problem** section, we are uncertain if AI methods of image analysis in general are appropriate for these stipe counts, or if we ought to simply count bull kelp stipes manually via human observers reviewing the video.  
 
-* To see a complete ROV transect from the forward-facing camera with stills extracted at 2 second interval, see [here](https://viame.kitware.com/#/viewer/65f9a6c9481fe4ee851404f1). This transect has been fully annotated manually in VIAME.
+* To see a complete ROV transect from the forward-facing camera with stills extracted at 2 second interval, see [here](https://viame.kitware.com/#/viewer/65f9a6c9481fe4ee851404f1](https://viame.kitware.com/#/viewer/6650f76027e66d3c73937562)). This transect has been fully annotated manually in VIAME.
 
 * See the DropBox folder [here](https://www.dropbox.com/scl/fo/tb4zhxbxcydjcw2ulzn2x/AI6hLC_uTVSKmR7yAzxr_oA?rlkey=r5gdlz5lt1hvicb9o6ueq0ofh&dl=0) for example still images of bull kelp stipes from the ROV.
 
