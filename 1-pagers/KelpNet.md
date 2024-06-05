@@ -16,7 +16,7 @@ We also aim to **share a trained classifier** with other interested parties so t
 ## The Proposed Solution
 We think creating an offshoot of CoralNet (called KelpNet) that is fine-tuned to temperate waters to identify algae species of interest would be a great solution. Considering we have thousands of image patches labeled by volunteers, it would be beneficial to leverage this existing dataset.
 
-To support the development of KelpNet, we have found an unofficial codebase called [CoralNet-Toobox](https://github.com/Jordan-Pierce/CoralNet-Toolbox) that allows users to use processes associated with CoralNet. While this toolbox is a valuable resource, it is not very user-friendly.
+To support the development of KelpNet, we have found an unofficial codebase called [CoralNet-Toobox](https://github.com/Jordan-Pierce/CoralNet-Toolbox) that allows users to use processes associated with CoralNet. While this toolbox is a valuable resource, we have experienced challenges implementing it.
 
 To address this, we propose the following enhancements:
 
