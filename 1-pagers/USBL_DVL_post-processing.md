@@ -31,8 +31,8 @@ There are likely a variety of analytical options available, including running a 
 
 ## Next Steps
 All the necessary data from the USBL and DVL are contained in the ROV's TLOG. 
-An example TLOG can be found here. 
-Furthermore, Python code to access TLOGs can be found here. 
+An example TLOG can be found [here](https://www.dropbox.com/scl/fo/4t5c2jr2la2w4hdx15zzx/AIpZHlauJyygAiNhgufH6mU?rlkey=6mcu34evuvo19no5vebd5yqar&dl=0). 
+Furthermore, Python code to access TLOGs can be found [here](https://github.com/clydemcqueen/ardusub_log_tools). 
 
 ## Caveats
 
