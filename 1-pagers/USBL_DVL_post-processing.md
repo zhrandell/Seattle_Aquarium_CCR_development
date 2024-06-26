@@ -26,15 +26,44 @@ Furthermore, upon rotating the ROV around at the 100m end of the transect tape t
 We want to plot our ROV surveys after-the-fact more accurately than either the USBL or DVL are capable of individually. 
 We therefore want to post-process these data streams to calculate a revised trackline for any given ROV survey. 
 
+The long-term goal is to use the ArduPilot EKF (Extended Kalman Filter) to produce a good pose from the USBL and DVL data.
+This has a few challenges:
+* Fusing the body-frame DVL and world-frame USBL data requires a good ROV heading.
+There are [several known ArduSub bugs](https://github.com/ArduPilot/ardupilot/issues/18229) that need to be addressed,
+and we may need to consider a different hardware design, such as getting the compass(es) away from the thrusters and ESCs.
+* The USBL system appears as a noisy, intermittent GPS receiver to the ArduSub EKF. We may want to make changes to the EKF
+to better support USBL systems. This project will give us insights into the noise model and help us plan and propose changes.
+
 ## The Proposed Solution
-There are likely a variety of analytical options available, including running a relatively simple EKF.
+Build a Kalman filter that combines sensor data to produce an optimized track.
+
+For the first version we can use data that exists in the tlog files:
+* GPS_INPUT messages from the USBL system
+* VISION_POSITION_DELTA messages from the DVL system
+* ATTITUDE messages from the ArduSub EKF, this is the result of fusing one magnetometer with the gyro and accelerometer
 
 ## Next Steps
-All the necessary data from the USBL and DVL are contained in the ROV's TLOG. 
 An example TLOG can be found [here](https://www.dropbox.com/scl/fo/4t5c2jr2la2w4hdx15zzx/AIpZHlauJyygAiNhgufH6mU?rlkey=6mcu34evuvo19no5vebd5yqar&dl=0). 
-Furthermore, Python code to access TLOGs can be found [here](https://github.com/clydemcqueen/ardusub_log_tools). 
+Furthermore, Python code to access TLOGs can be found [here](https://github.com/clydemcqueen/ardusub_log_tools).
+
+[FilterPy](https://filterpy.readthedocs.io/en/latest/) is a simple Kalman filter Python library.
+[Here is an example use](https://github.com/clydemcqueen/terrain_kf_py) of FilterPy.
 
 ## Caveats
 
+The ArduSub EKF only looks at 1 of the 2 magnetometers when generating the ATTITUDE message.
+It is possible that the other magnetometer has better data, this data is available in the dataflash logs.
+
+It is also possible that both magnetometers are wrong.
+
+Merging data from TLOG and dataflash logs requires careful handling of timestamps.
+
 ## Extra credit 
 
+Future versions can consider additional data present in the ArduSub dataflash logs:
+* MAG messages contain measurements from both magnetometers
+* IMU messages contain gyro and accelerometer measurements
+
+We can also log and use additional data in future versions:
+* [The vessel pose from the GNSS compass can be logged as a GLOBAL_POSITION_INT message](https://github.com/clydemcqueen/wl_ugps_external_extension/issues/2)
+* The acoustic solution from the USBL system can be logged as a bespoke MAVLink message
