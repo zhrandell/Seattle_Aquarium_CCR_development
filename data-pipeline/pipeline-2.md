@@ -101,7 +101,7 @@ graph TD
     F --> I[unprocessed]
     I --> M[YYYY_MM_DD_hh-mm-ss.jpg\n...\nYYYY_MM_DD_hh-mm-ss.GPR\n...]
     F --> J[cleaned]
-    J --> K[YYYY_MM_DD_hh-mm-ss_TX\n<i>folder cointaining a complete transect e.g., T1, T2</i>]
+    J --> K[YYYY_MM_DD_hh-mm-ss_TX\n...\n<i>folder cointaining a complete transect e.g., T1, T2</i>]
     K --> L[YYYY_MM_DD_hh-mm-ss.jpg\n...]
     D --> O[YYYY_MM_DD hh-mm-ss vehicle1.csv\nYYYY_MM_DD hh-mm-ss.tlog\n___.bin]
     E --> P[.jpg\n.pdf\n.png]
