@@ -51,13 +51,19 @@ graph LR
 
 #### DVL
 
-* Description: DVL-A50, performance model
-* Output: sensor body-frame velocity (processed)
-* How processed: ?
-* Logs generated: ?
-* Rate: ?
-* Covariance: ?
-* Links: [website](https://waterlinked.com/shop/dvl-a50-114#attr=8,53,192), [user-guide](https://waterlinked.github.io/dvl/dvl-a50/)
+* Description: WaterLinked DVL-A50, performance model
+* Output: sensor velocity, body frame {forward, right, down}
+  * MAVLink.VISION_POSITION_DELTA.time_delta_usec = dt * 1e6
+  * MAVLink.VISION_POSITION_DELTA.angle_delta = ω * dt
+  * MAVLink.VISION_POSITION_DELTA.position_delta = v * dt
+  * MAVLink.VISION_POSITION_DELTA.confidence = 100 * (1 - min(0.4, σ) / 0.4)
+  * Data is from the _Velocity-and-transducer report_, which is not processed by the on-board EKF
+  * Rate is 2-15 Hz, changes with altitude
+* Position relative to ROV origin {forward, right, down}: ?
+* Links: [website](https://waterlinked.com/shop/dvl-a50-114#attr=8,53,192), [user-guide](https://waterlinked.github.io/dvl/dvl-a50/), [driver](https://github.com/bluerobotics/BlueOS-Water-Linked-DVL/)
+* Notes
+  * Current firmware version: I think 2.4.4? No need to upgrade to 2.5.2, we do not need PD4 protocol support
+  * Long term accuracy is listed as ±0.1%
 
 #### Barometer
 
@@ -80,6 +86,28 @@ graph LR
 * Output: angular rate (raw)
 
 ## Logs
+
+### Telemetry (tlog)
+
+This is a record of the MAVLink messages received.
+The local time (UNIX epoch) is recorded with each message as it is logged.
+
+These files can contain messages from multiple MAVLink sources (sysid, compid tuples).
+Tools should filter by MAVLink source.
+
+There are currently 2 systems writing tlog files:
+1. QGroundControl: the timestamp is the laptop system time.
+2. mavlink-router: the timestamp is the Raspberry Pi system time. _Not tested_
+
+Note that mavlink-router (the recommended router) has a bug where some number of messages are occasionally dropped.
+These messages are not routed to QGroundControl, so they are not logged.
+See https://github.com/bluerobotics/BlueOS-Water-Linked-DVL/issues/44
+
+### Dataflash (BIN)
+
+TODO
+
+### QGroundControl down-sampled csv file
 
 TODO
 
