@@ -85,7 +85,42 @@ TODO
 
 ## Warehouse
 
-TODO describe file location(s), organization, naming conventions
+```mermaid
+---
+title: Folder structure for all files from a single ROV survey day
+---
+graph TD
+    A[YYYY_MM_DD]
+    A --> B[downward]
+    A --> C[forward]
+    C --> N[video]
+    A --> D[logs]
+    A --> E[maps]
+    B --> F[photos]
+    B --> H[video]
+    F --> I[unprocessed]
+    I --> M[YYYY_MM_DD_hh-mm-ss.jpg\n...\nYYYY_MM_DD_hh-mm-ss.GPR\n...]
+    F --> J[cleaned]
+    J --> K[YYYY_MM_DD_hh-mm-ss_TX\n<i>folder cointaining a complete transect e.g., T1, T2</i>]
+    K --> L[YYYY_MM_DD_hh-mm-ss.jpg\n...]
+    D --> O[YYYY_MM_DD hh-mm-ss vehicle1.csv\nYYYY_MM_DD hh-mm-ss.tlog\n___.bin]
+    E --> P[.jpg\n.pdf\n.png]
+```
+
+```mermaid
+---
+title: Path to color-corrected photos for AI processing, photogrammetry
+---
+graph LR
+    A[YYYY_MM_DD]
+    A --> B[downward]
+    B --> C[photos]
+    C --> D[cleaned]
+    D --> E[YYYY_MM_DD_hh-mm-ss_TX\n...]
+    E --> F[YYYY_MM_DD_hh-mm-ss.jpg\n...]
+```
+
+
 
 ## Products
 
