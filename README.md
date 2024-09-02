@@ -11,6 +11,7 @@ This repo serves as a landing pad for active areas of development of our Coastal
   <tr> <td> <b> <a href="https://github.com/zhrandell/Seattle_Aquarium_CCR_development/blob/main/1-pagers/bull_kelp_tracking.md"> bull_kelp_tracking </a> </b> </td> <td> Identify a computer vision path forward for detecting and tracking bull kelp stipes </td> </tr>
   <tr> <td> <b> <a href="https://github.com/zhrandell/Seattle_Aquarium_CCR_development/blob/main/1-pagers/KelpNet.md"> KelpNet </a> </b> </td> <td> Create an image classifier platform for kelp and substrate </td> </tr>
   <tr> <td> <a href="https://github.com/zhrandell/Seattle_Aquarium_CCR_development/blob/main/1-pagers/USBL_DVL_post-processing.md"> <b> USBL_DVL_post-processing </b> </a> </td> <td> Generate ROV track logs by combining DVL and USBL post-flight </td> </tr>
+  <tr> <td> <a href="https://github.com/zhrandell/Seattle_Aquarium_CCR_development/blob/main/1-pagers/localization_fixit.md"> <b> ArduSub Localization Fixit </b> </a> </td> <td> BlueOS extension to diagnose and fix common localization problems </td> </tr>
  </table>
 
 <!---  <tr> <td> <a href="URL"> <b> TITLE </b> </a> </td> <td> DESCRIPTION </td> </tr>  -->
