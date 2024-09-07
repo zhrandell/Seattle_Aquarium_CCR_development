@@ -17,8 +17,6 @@
 
 <tr><td> surftrak_fixit </td><td> BlueOS Extension </td><td> v1.0.0-beta.2 </td><td>  </td><td> </td></tr>
 
-<tr><td> major_tom </td><td> BlueOS Extension </td><td> 2024-07-29 </td><td>  </td><td> public.ecr.aws/blueos/bcloud-agent </td></tr> 
-
 <tr><td> DVL firmware </td><td> firmware </td><td> . . .  </td><td>  </td><td>  </td></tr>
 
 <tr><td> G2 box firmware </td><td> firmware </td><td> . . .  </td><td>  </td><td>  </td></tr>
