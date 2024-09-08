@@ -1,4 +1,9 @@
-# ROV _Nereo_ firmware & software 
+# firmware & software versions 
+
+The purpose of this document is to track the various versions of firmware and software associated with our ROV operations, enabling streamlined troubleshooting and bug illumination. 
+Upgrades can be recommended via the Issues tab. 
+
+## ROV _Nereo_
 <table>
 
 <tr><td> <i>item</i> </td><td> <i>type</i> </td><td> <i>version</i> </td><td> <i>commit</i> </td><td> <i>notes</i> </td></tr>
