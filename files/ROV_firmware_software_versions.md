@@ -21,8 +21,6 @@
 
 <tr><td> G2 box firmware </td><td> firmware </td><td> . . .  </td><td>  </td><td>  </td></tr>
 
-<tr><td> GNSS Compass firmware </td><td> firmware </td><td> . . . </td><td>  </td><td>  </td></tr>
-
 <!-- 
 <tr><td> item </td><td> type </td><td> version </td><td> commit </td><td> notes </td></tr> 
 -->
