@@ -29,6 +29,16 @@ This clock resets to 0 when ArduSub reboots.
 A new BIN file is created for each boot, so time is monotonic within a BIN file.
 If a dive spans multiple BIN files then we will need to synchronize across all of them.
 
+### Future: ArduSub DDS (ROS2) Time
+
+ArduSub can be compiled with a Micro XRCE-DDS client, which when coupled with a running Micro ROS agent can publish
+ROS2 messages. Most ROS2 messages have timestamps. ArduSub (AP_DDS) will use 1 of 2 clocks to generate these timestamps:
+1. If there is GPS (or any another real-time clock) it will be used
+2. Otherwise, the internal 64-bit microseconds-since-boot clock will be used
+
+> TODO If the GPS (USBL) time signal comes late, e.g., when the sub submerges and the USBL starts reporting,
+> then the timestamps will jump forward. Verify / fix this.
+
 ### Laptop Time
 
 The laptop gets its time from a network timeserver whenever it is connected to the internet.
