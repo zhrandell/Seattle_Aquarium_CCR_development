@@ -24,7 +24,7 @@ Upgrades can be recommended via the Issues tab.
 
 <tr><td> DVL firmware </td><td> firmware </td><td> 2.4.0  </td><td>  </td><td> 2.5.2 available </td></tr>
 
-<tr><td> G2 box firmware </td><td> firmware </td><td> . . .  </td><td>  </td><td>  </td></tr>
+<tr><td> G2 box firmware </td><td> firmware </td><td> 3.3.1  </td><td>  </td><td> 3.3.4 available </td></tr>
 
 <!-- 
 <tr><td> item </td><td> type </td><td> version </td><td> commit </td><td> notes </td></tr> 
@@ -40,7 +40,7 @@ Upgrades can be recommended via the Issues tab.
 
 <tr><td> ArduSub </td><td> ROV firmware </td><td> 4.5.0 (BETA) </td><td>  </td><td>  </td></tr>
 
-<tr><td> BlueOS </td><td> ROV software </td><td> 1.3.0 </td><td> cc71b67e </td><td>  </td></tr>
+<tr><td> BlueOS </td><td> ROV software </td><td> 1.3.1 </td><td> d47b4b32 </td><td> up to date </td></tr>
 
 <tr><td> QGC </td><td> flight control interface </td><td> 4.4.1 </td><td>  </td><td>  </td></tr>
 
@@ -54,9 +54,9 @@ Upgrades can be recommended via the Issues tab.
 
 <tr><td> DVL firmware </td><td> firmware </td><td> . . .  </td><td>  </td><td>  </td></tr>
 
-<tr><td> G2 box firmware </td><td> firmware </td><td> . . .  </td><td>  </td><td>  </td></tr>
+<tr><td> G2 box firmware </td><td> firmware </td><td> 3.3.1  </td><td>  </td><td> 3.3.4 available </td></tr>
 
-<tr><td> GNSS satellite compass firmware </td><td> firmware </td><td> . . .  </td><td>  </td><td>  </td></tr>
+<tr><td> GNSS satellite compass firmware </td><td> firmware </td><td> 2.3  </td><td>  </td><td> update available </td></tr>
 
 <!-- 
 <tr><td> item </td><td> type </td><td> version </td><td> commit </td><td> notes </td></tr> 
