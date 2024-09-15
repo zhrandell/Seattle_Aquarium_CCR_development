@@ -103,13 +103,13 @@ Note that mavlink-router (the recommended router) has a bug where some number of
 These messages are not routed to QGroundControl, so they are not logged.
 See https://github.com/bluerobotics/BlueOS-Water-Linked-DVL/issues/44
 
-### Dataflash (BIN)
+### Dataflash (BIN) 
 
 TODO
 
 ### QGroundControl down-sampled csv file
 
-TODO
+Potentially avoid the QGC logs altogether due to (1) an upcoming migration to BR's Cockpit (moving away from QGC) and (2) the "column shift" error that persists, requiring extensive, manual reconstruction of the logs. (See  **Products** below). 
 
 ## Warehouse
 
