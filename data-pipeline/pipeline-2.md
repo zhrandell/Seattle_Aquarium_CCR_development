@@ -171,4 +171,9 @@ The script will use the same fields and methods as QGC, so the results should be
 
 ### Photogrammetry
 
-TODO
+* Use open-source programs to avoid proprietary, black-box software
+* Use imagery obtained by GoPro 12 using custom settings, e.g., photo-interval (photos, not still images from video), color-correct RAW images saved to .jpg (or whatever desired file-format, e.g., .png)
+* open-source photogrammetry software e.g. [COLMAP](https://colmap.github.io/) & [nerfstudio](https://docs.nerf.studio/)
+* Following some early-days preliminary testing (see, e.g., [here](https://www.dropbox.com/scl/fi/1d5gpvgtmyd37smeiy4rs/SGI_blog_post_2023.pdf?rlkey=im0y0x7unfgxutdcmt1uix3z7&dl=0)), image processing prior to the implementation of photogrammetry may be useful.
+* e.g., [sea-thru](https://openaccess.thecvf.com/content_CVPR_2019/papers/Akkaynak_Sea-Thru_A_Method_for_Removing_Water_From_Underwater_Images_CVPR_2019_paper.pdf) could be implemented as part of an image-processing workflow (on GitHub [here](https://github.com/hainh/sea-thru).
+* . . . other photogrammetry / image-processing items to consider? 
