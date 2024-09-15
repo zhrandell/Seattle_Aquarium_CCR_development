@@ -127,12 +127,12 @@ graph TD
     B --> F[photos]
     B --> H[video]
     F --> I[unprocessed]
-    I --> M[YYYY_MM_DD_hh-mm-ss.jpg\n...\nYYYY_MM_DD_hh-mm-ss.GPR\n...]
+    I --> M[YYYY_MM_DD_hh-mm-ss.jpg<br>...<br>YYYY_MM_DD_hh-mm-ss.GPR<br>...]
     F --> J[cleaned]
-    J --> K[YYYY_MM_DD_hh-mm-ss_TX\n...\n<i>folder containing a complete transect e.g., T1, T2</i>]
-    K --> L[YYYY_MM_DD_hh-mm-ss.jpg\n...]
-    D --> O[YYYY_MM_DD hh-mm-ss vehicle1.csv\nYYYY_MM_DD hh-mm-ss.tlog\n___.bin]
-    E --> P[.jpg\n.pdf\n.png]
+    J --> K[YYYY_MM_DD_hh-mm-ss_TX<br>...<br><i>folder containing a complete transect e.g., T1, T2</i>]
+    K --> L[YYYY_MM_DD_hh-mm-ss.jpg<br>...]
+    D --> O[YYYY_MM_DD hh-mm-ss vehicle1.csv<br>YYYY_MM_DD hh-mm-ss.tlog<br>___.bin]
+    E --> P[.jpg<br>.pdf<br>.png]
 ```
 
 ```mermaid
@@ -144,8 +144,8 @@ graph LR
     A --> B[downward]
     B --> C[photos]
     C --> D[cleaned]
-    D --> E[YYYY_MM_DD_hh-mm-ss_TX\n...]
-    E --> F[YYYY_MM_DD_hh-mm-ss.jpg\n...]
+    D --> E[YYYY_MM_DD_hh-mm-ss_TX<br>...]
+    E --> F[YYYY_MM_DD_hh-mm-ss.jpg<br>...]
 ```
 
 
