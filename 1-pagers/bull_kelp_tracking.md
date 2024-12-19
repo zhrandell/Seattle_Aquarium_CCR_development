@@ -27,7 +27,7 @@ The need to detect and track bull kelp stipes from forward-facing ROV video has 
 
 * We need to track stipes from one frame (extracted still image) to the next, i.e., object tracking. Yet there is a tradeoff - between effort and the frequency of stills we extract (see the final point in this section below). 
 
-* At which point does the algorithm first detect the stipe? Stipes first appear in the distance, and as the ROV moves closer, become more visually resolved again their background. 
+* At which point does the algorithm first detect the stipe? Stipes first appear in the distance, and as the ROV moves closer, become more visually resolved against their background. 
 
 * Varying background: stipes may have the water column behind them (providing excellent contrast) or the seafloor behind them (providing much less visual contrast, as the seafloor and stipe will be similarly colored). 
 
