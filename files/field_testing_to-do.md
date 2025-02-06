@@ -32,6 +32,16 @@ MW </td><td>
 </tr> 
 
 <tr><td> 
+Test flight using Cockpit to evaluate as a replacement for QGroundControl </td><td> <!-- describe the test envisioned and what is required  -->
+Pier 59 </td><td> <!-- Pier 59 or vessel test?  -->
+next flight </td><td> <!-- what is the approximate urgency?  -->
+full team </td><td> <!-- who suggested the idea? who to coordinate with? -->
+2/5/2025 </td><td> <!-- date suggested -->
+... </td><td> <!-- date completed -->
+... </td>     <!-- test results -->
+</tr> 
+
+<tr><td> 
 ... </td><td> <!-- describe the test envisioned and what is required  -->
 ... </td><td> <!-- Pier 59 or vessel test?  -->
 ... </td><td> <!-- what is the approximate urgency?  -->
