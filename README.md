@@ -2,6 +2,25 @@
 
 This repo serves as a landing pad for active areas of development of our Coastal Climate Resilience (CCR) program. Specifically, this repo houses 1-pager .md documents ready for development, and also a hub to communicate via the Issues tab. 
 
+### Other CCR GitHub repositories
+```mermaid
+
+graph TD
+
+A["<a href='https://github.com/Seattle-Aquarium/Coastal_Climate_Resilience' target='_blank' style='font-size: 16px; font-weight: bold;'>Coastal_Climate_Resilience</a><br><font color='darkgray' style='text-decoration: none;'>(this page) the main landing pad for the CCR research program</font>"]
+
+A --> B["<a href='https://github.com/Seattle-Aquarium/CCR_analytical_resources' target='_blank' style='font-size: 16px; font-weight: bold;'>CCR_analytical_resources</a><br><font color='darkgray' style='text-decoration: none;'>contains code, analytical tools, and data</font>"]
+
+A --> C["<a href='https://github.com/Seattle-Aquarium/CCR_benthic_analyses' target='_blank' style='font-size: 16px; font-weight: bold;'>CCR_benthic_analyses</a><br><font color='darkgray' style='text-decoration: none;'>code to analyze ROV survey data</font>"]
+
+A --> D["<a href='https://github.com/Seattle-Aquarium/CCR_development' target='_blank' style='font-size: 16px; font-weight: bold;'>CCR_development</a><br><font color='darkgray' style='text-decoration: none;'>repo for active software projects and Issues</font>"]
+
+A --> E["<a href='https://github.com/Seattle-Aquarium/CCR_benthic_taxa_simulation' target='_blank' style='font-size: 16px; font-weight: bold;'>CCR_benthic_taxa_simulation</a><br><font color='darkgray' style='text-decoration: none;'>code to simulate ROV survey data</font>"]
+
+style D stroke:#00B2EE,stroke-width:4px
+
+```
+
 
 ### 1-pager project descriptions 
 <table>
